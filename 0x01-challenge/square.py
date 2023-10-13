@@ -5,6 +5,7 @@
 class Square():
     """ Square class """
     width = 0
+    height = 0
 
     def __init__(self, *args, **kwargs):
         """ Constructor """
@@ -17,7 +18,7 @@ class Square():
 
     def PermiterOfMySquare(self):
         """ Perimeter of the square """
-        return (self.width * 4)
+        return (self.width * 2) + (self.width * 2)
 
     def __str__(self):
         """ Print the square """
@@ -26,7 +27,7 @@ class Square():
 
 if __name__ == "__main__":
 
-    s = Square(width=12)
+    s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
     print(s.PermiterOfMySquare())
