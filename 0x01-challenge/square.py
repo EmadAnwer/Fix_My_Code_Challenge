@@ -2,8 +2,10 @@
 """ Square class """
 
 
-class Square:
+class Square():
     """ Square class """
+    width = 0
+    height = 0
 
     def __init__(self, *args, **kwargs):
         """ Constructor """
@@ -13,15 +15,15 @@ class Square:
 
     def area_of_my_square(self):
         """ Area of the square """
-        return self.width ** 2
+        return self.width * self.height
 
     def permiter_of_my_square(self):
         """ Perimeter of the square """
-        return (self.width * 4)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         """ Print the square """
-        return "{}*{}".format(self.width, self.width)
+        return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
