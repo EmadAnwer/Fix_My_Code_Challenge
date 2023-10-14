@@ -17,7 +17,7 @@ class Square:
 
     def permiter_of_my_square(self):
         """ Perimeter of the square """
-        return (self.width * 4)
+        return (self.width * 5)
 
     def __str__(self):
         """ Print the square """
