@@ -4,10 +4,10 @@
 
 class Square:
     """ Square class """
-    width = 0
 
     def __init__(self, *args, **kwargs):
         """ Constructor """
+        self.width = 0
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -17,11 +17,11 @@ class Square:
 
     def permiter_of_my_square(self):
         """ Perimeter of the square """
-        return (self.width * 5)
+        return (self.width * 4)
 
     def __str__(self):
         """ Print the square """
-        return "{}/{}".format(self.width, self.width)
+        return "{}*{}".format(self.width, self.width)
 
 
 if __name__ == "__main__":
